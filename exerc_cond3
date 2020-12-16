@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class exerc2 {
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int hi, hf, duracao;
+		
+		System.out.println("Qual horário iniciou?");
+		hi = sc.nextInt();
+		
+		System.out.println("Qual horário terminou?");
+		hf = sc.nextInt();
+		
+		if(hi < hf) {
+			duracao = hf - hi;
+		}
+		else {
+			duracao = 24-hi + hf;
+		}
+		
+		System.out.println("O jogo durou "+ duracao + "hora(s)");
+		
+	sc.close();
+		
+	}
+}
