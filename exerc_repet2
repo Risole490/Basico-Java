@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class exerc4 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		
+		while (x >0 && y >0) {
+			System.out.println("primeiro");
+			break;
+		}
+		
+		while (x<0 && y >0) {
+			System.out.println("segundo");
+			break;
+		}
+		
+		while(x<0 && y<0) {
+			System.out.println("terceiro");
+			break;
+		}
+		
+		while(x>0 && y<0) {
+			System.out.println("quarto");
+			break;
+		}
+		
+		sc.close();
+		
+	}
+	 
+}
